@@ -1,0 +1,66 @@
+//
+// Imports
+// --------------------------------------------------
+@import "font/font-mbc.less";
+@import "vendor/bootstrap/bootstrap.less";
+@import "vendor/bootstrap/theme.less";
+@import "flexboxgrid.less";
+
+@import "header.less";
+@import "headerVideoWidget.less";
+@import "stickyNavigation.less";
+@import "headerVideoWidget.less";
+@import "textContentWidget.less";
+@import "linkTeaserWidget.less";
+@import "galleryWidget.less";
+@import "cookieWidget.less";
+@import "footer.less";
+
+
+
+html {
+	height: 100%;
+	background-color: #000;
+}
+
+body {
+ 	height: 100%;
+	color: @white;
+	background: inherit;
+	
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	font-family: "CorporateSRegular", "Times New Roman", "Arial", serif;
+	line-height: normal;
+	
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.site-wrapper {
+	width: 100%;
+	max-width: 1600px;
+	height: 100%;
+	margin: 0 auto;
+	border: 0;
+}
+
+.widget {
+	margin-top: 120px;
+}
+
+.container {
+	position: relative;
+	margin: 0 auto;
+	
+	max-width: 1440px;
+	height: 100%;
+	
+	border-left: 80px solid transparent;
+	border-right: 80px solid transparent;
+	
+	@media (max-width: 1440px) {
+		border-left: 55px solid transparent;
+		border-right: 55px solid transparent;
+	}
+}

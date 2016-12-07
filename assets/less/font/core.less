@@ -1,0 +1,102 @@
+/* FONT AWESOME CORE
+ * -------------------------- */
+
+[class^="icon-"],
+[class*=" icon-"] {
+  .icon-coloratur();
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  text-decoration: inherit;
+  display: inline-block;
+  speak: none;
+  vertical-align: middle;
+}
+
+
+/* makes sure icons active on rollover in links */
+a {
+  [class^="icon-"],
+  [class*=" icon-"] {
+  	display: inline;
+  }
+}
+
+/* increased font size for icon-large */
+[class^="icon-"],
+[class*=" icon-"] {
+  &.icon-fixed-width {
+    display: inline-block;
+    width: 16/14em;
+    text-align: right;
+    //padding-right: 4/14em;
+    &.icon-large {
+      width: 20/14em;
+    }
+  }
+}
+
+.icons-ul {
+  margin-left: @icons-li-width;
+  list-style-type: none;
+
+  > li { position: relative; }
+
+  .icon-li {
+    position: absolute;
+    left: -@icons-li-width;
+    width: @icons-li-width;
+    text-align: center;
+    line-height: inherit;
+  }
+}
+
+// allows usage of the hide class directly on font awesome icons
+[class^="icon-"],
+[class*=" icon-"] {
+  &.hide {
+    display: none;
+  }
+}
+
+.icon-muted { color: @iconMuted; }
+.icon-light { color: @iconLight; }
+.icon-dark { color: @iconDark; }
+.icon-green { color: #009688; }
+.icon-red { color: #E53935; }
+
+
+
+// Icon Sizes
+// -------------------------
+
+.icon-medium {
+  font-size: 20px;
+}
+
+.icon-large {
+  font-size: 40px;
+}
+
+.icon-extra-large {
+  font-size: 48px;
+}
+
+
+// Floats & Margins
+// -------------------------
+
+// Quick floats
+.pull-right { float: right; }
+.pull-left { float: left; }
+
+[class^="icon-"],
+[class*=" icon-"] {
+  &.pull-left {
+    margin-right: .3em;
+  }
+  &.pull-right {
+    margin-left: .3em;
+  }
+}

@@ -1,0 +1,55 @@
+.sticky-navigation {
+	height: 50px;
+	position: relative;
+	
+	border-bottom: 1px solid #666666;
+	
+	.section-label {
+		line-height: 50px;
+		font-size: 16px;
+		letter-spacing: 0.5px;
+		
+		margin: 0;
+	}
+	
+	.inner {
+		position: absolute;
+		right: 2px;
+		bottom: 0px;
+		
+		ul {
+			position: relative;
+			list-style: none;
+			
+			li {
+				float: left;
+				padding-left: 60px;
+				
+				@media (max-width: 1440px) {
+					padding-left: 40px;
+				}
+				
+				@media (max-width: 1024px) {
+					padding-left: 30px;
+				}
+				
+				@media (max-width: 375px) {
+					padding-left: 20px;
+				}
+				
+				a {
+					position: relative;
+					line-height: 50px;
+					font-size: 16px;
+					letter-spacing: 0.5px;
+					padding-left: 0;
+					padding-right: 0px;
+					
+					i {
+						margin-right: 5px;
+					}
+				}
+			}
+		}
+	}
+}

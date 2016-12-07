@@ -1,0 +1,52 @@
+.cookie-container {
+	position: relative;
+	z-index: 10;
+	
+	top: 0;
+	left: 0;
+	right: 0;
+
+	background: #FFF;
+	overflow: hidden;
+
+	//display: none;
+	height: 0;
+
+	&.open {
+		height: 135px;
+	}
+	
+	h3 {
+		color: #000;
+	}
+
+	.message {
+		text-align: left;
+		font-family: "CorporateSRegular", "Arial", serif;
+	    font-weight: 400;
+	    font-size: 16px;
+	    line-height: 21px;
+	    letter-spacing: 0.5px;		
+	    color: #000;
+	}
+
+	.closeButton {
+		position: relative;
+	    float: right;
+	    top: -40px;
+	    width: 15px;
+	    height: 15px;
+	    border: none;
+	    background: transparent url("../img/global/modal/close_modal.png") no-repeat left top;
+	}
+
+	a {
+		color: @brand-primary;
+		text-decoration: none;
+	}
+
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
